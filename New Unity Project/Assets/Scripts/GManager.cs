@@ -5,6 +5,9 @@ using UnityEngine;
 public class GManager : MonoBehaviour
 {
     InputStorage[] inputs;
+
+    public Player[] players;
+
     List<InputStorage> playerInputs1 = new List<InputStorage>();
     List<InputStorage> playerInputs2 = new List<InputStorage>();
     List<InputStorage> playerInputs3 = new List<InputStorage>();
@@ -27,6 +30,7 @@ public class GManager : MonoBehaviour
     {
         GenerateRound1Lists();
         GenerateOtherLists();
+        SetPlayersLists();
     }
 
     void GenerateRound1Lists()
@@ -77,17 +81,16 @@ public class GManager : MonoBehaviour
             rng = Random.Range(0, 15);
             playerInputs5R2.Add(inputs[rng]);
             rng = Random.Range(0, 15);
+            playerInputs1R3.Add(inputs[rng]);
+            rng = Random.Range(0, 15);
+            playerInputs2R3.Add(inputs[rng]);
+            rng = Random.Range(0, 15);
+            playerInputs3R3.Add(inputs[rng]);
+            rng = Random.Range(0, 15);
+            playerInputs4R3.Add(inputs[rng]);
+            rng = Random.Range(0, 15);
+            playerInputs5R3.Add(inputs[rng]);
         }
     }
 
-    void GenerateRound3Lists()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
