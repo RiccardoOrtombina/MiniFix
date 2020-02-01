@@ -46,46 +46,60 @@ MonoBehaviour:
   inputs:
   - inputName: A
     inputType: 0
-    inputImage: {fileID: 0}
+    inputImage: {fileID: 8060943878893444473, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: B
     inputType: 0
-    inputImage: {fileID: 0}
+    inputImage: {fileID: 5033587903150628196, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: X
     inputType: 0
-    inputImage: {fileID: 0}
+    inputImage: {fileID: -6117572650010272893, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: Y
     inputType: 0
-    inputImage: {fileID: 0}
+    inputImage: {fileID: 7434325851868694912, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: Up
     inputType: 1
-    inputImage: {fileID: 0}
+    inputImage: {fileID: 6072617809015789834, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: Right
     inputType: 1
-    inputImage: {fileID: 0}
+    inputImage: {fileID: 8213185674646122455, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: Down
     inputType: -1
-    inputImage: {fileID: 0}
+    inputImage: {fileID: -1061352857441666376, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: Left
     inputType: -1
-    inputImage: {fileID: 0}
+    inputImage: {fileID: 1082626899396981506, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: RB
     inputType: 0
-    inputImage: {fileID: 0}
+    inputImage: {fileID: -2891405145259930677, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: LB
     inputType: 0
-    inputImage: {fileID: 0}
+    inputImage: {fileID: 9061208092573186619, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: RT
     inputType: 1
-    inputImage: {fileID: 0}
+    inputImage: {fileID: -7144773616392201407, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: RT
     inputType: -1
-    inputImage: {fileID: 0}
+    inputImage: {fileID: -627560134354624237, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: R3
     inputType: 0
-    inputImage: {fileID: 0}
+    inputImage: {fileID: 104615485991768252, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   - inputName: L3
     inputType: 0
-    inputImage: {fileID: 0}
+    inputImage: {fileID: -390049707908804323, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
+      type: 3}
   players:
   - {fileID: 0}
   - {fileID: 0}
