@@ -5,7 +5,7 @@ using UnityEngine;
 public class GManager : MonoBehaviour
 {
     public InputStorage[] inputs;
-
+    List<InputStorage> bottonissimi = new List<InputStorage>();
     public Player[] players;
 
     List<InputStorage> playerInputs1 = new List<InputStorage>();
@@ -31,9 +31,15 @@ public class GManager : MonoBehaviour
         GenerateRound1Lists();
         GenerateOtherLists();
         SetPlayersLists();
+
+        foreach(InputStorage input in inputs)
+        {
+            bottonissimi.Add(input);
+        }
+
         foreach(Player amico in players)
         {
-            amico.SetListoneBruttone(playerInputs5R3);
+            amico.SetListoneBruttone(bottonissimi);
         }
     }
 

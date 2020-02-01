@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class InputStorage 
 {
     public string inputName;
-    [Range(0, 1)]
+    [Range(-1 , 1)]
     public int inputType;
     public Image inputImage;
 }

@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public int playerNumber;
     public bool gooooooooooo = false;
+    string numeraccioGiocatore;
 
     public List<InputStorage> playerInputs1 = new List<InputStorage>();
     public List<InputStorage> playerInputs2 = new List<InputStorage>();
@@ -32,7 +33,6 @@ public class Player : MonoBehaviour
 
     List<InputStorage> bottonozzi;
     List<InputStorage> listinaBruttina = new List<InputStorage>();
-    List<InputStorage> inputtiniSbagliatini = new List<InputStorage>();
 
     public void SetListoneBruttone(List<InputStorage> iBottoniFannoMale)
     {
@@ -56,7 +56,12 @@ public class Player : MonoBehaviour
         listoneBruttone.Add(playerInputs4R3);
         listoneBruttone.Add(playerInputs5R3);
 
-        string numeraccioGiocatore = playerNumber.ToString();
+        numeraccioGiocatore = playerNumber.ToString();
+
+        foreach(InputStorage botton in bottonozzi)
+        {
+            botton.inputName += numeraccioGiocatore;
+        }
 
         foreach(List<InputStorage> listina in listoneBruttone)
         {
@@ -73,6 +78,7 @@ public class Player : MonoBehaviour
     {
         listinaBruttina = listoneBruttone[indexListoneBruttone];
         indexListinaBruttina = 0;
+        gooooooooooo = true;
     }
 
     // Update is called once per frame
@@ -80,15 +86,92 @@ public class Player : MonoBehaviour
     {
         if (gooooooooooo == true)
         {
+            Debug.Log(listinaBruttina[indexListinaBruttina].inputName);
+
             if(listinaBruttina[indexListinaBruttina].inputType == 0)
             {
                 if (Input.GetButtonDown(listinaBruttina[indexListinaBruttina].inputName))
                 {
-
+                    InputtinoGiustino();
                 }
 
-                else if (Input.)
+                else
+                {
+                    ControllaInputtozziSbagliati();
+                }
+                
             }
+
+            else if (listinaBruttina[indexListinaBruttina].inputType != 0)
+            {
+                if (Input.GetAxisRaw(listinaBruttina[indexListinaBruttina].inputName) == listinaBruttina[indexListinaBruttina].inputType)
+                {
+                    InputtinoGiustino();
+                }
+
+                else
+                {
+                    ControllaInputtozziSbagliati();
+                }
+            }
+        }
+    }
+
+    void ControllaInputtozziSbagliati()
+    {
+        foreach (InputStorage sp00ky in bottonozzi)
+        {
+            if (sp00ky.inputName != listinaBruttina[indexListinaBruttina].inputName)
+            {
+                if (sp00ky.inputType == 0)
+                {
+                    if (Input.GetButtonDown(sp00ky.inputName))
+                    {
+                        InputtoneSbagliatone();
+                    }
+                }
+
+                else if (sp00ky.inputType != 0)
+                {
+                    if (Input.GetAxisRaw(sp00ky.inputName) != 0)
+                    {
+                        InputtoneSbagliatone();
+                    }
+                }
+            }
+        }
+    }
+
+    void InputtinoGiustino()
+    {
+        Debug.Log("Giustino");
+        gooooooooooo = false;
+        if(indexListinaBruttina < listinaBruttina.Count)
+        {
+            indexListinaBruttina += 1;
+            gooooooooooo = true;
+        }
+
+        else if(indexListinaBruttina == listinaBruttina.Count)
+        {
+            indexListoneBruttone += 1;
+            SetCurrentListina();
+        }
+    }
+
+    void InputtoneSbagliatone()
+    {
+        Debug.Log("Sbagliatino");
+        gooooooooooo = false;
+        if(indexListinaBruttina == 0)
+        {
+            gooooooooooo = true;
+        }
+
+        else if(indexListinaBruttina > 0)
+        {
+            indexListinaBruttina -= 1;
+            gooooooooooo = true;
         }
     }
 }
