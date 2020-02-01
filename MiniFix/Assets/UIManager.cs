@@ -8,7 +8,7 @@ public class UIManager : MonoBehaviour
     public AudioClip[] correctButtonSounds;
     public AudioClip[] wrongButtonSounds;
 
-    AudioSource audioSource;
+    public AudioSource audioSource;
     int health = 4;
     public GameObject heart;
     public GameObject hitPrefabs;
@@ -16,17 +16,16 @@ public class UIManager : MonoBehaviour
     public Vector3 parcticlePos;
     public RectTransform PlayerButtons;
     Animator heartAnimator;
-    Vector3 startingPos;
+    public Vector3 startingPos;
 
 
     private void OnEnable() 
     {
-        startingPos = PlayerButtons.anchoredPosition;
+        //startingPos = PlayerButtons.anchoredPosition;
     }
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         heartAnimator = heart.GetComponent<Animator>();
     }
 
@@ -67,6 +66,6 @@ public class UIManager : MonoBehaviour
 
     public void ResetPosition()
     {
-        PlayerButtons.anchoredPosition = new Vector3 (startingPos.x, startingPos.y, startingPos.z);
+        PlayerButtons.anchoredPosition = startingPos;
     }
 }

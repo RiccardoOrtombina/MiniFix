@@ -10,7 +10,10 @@ public class AssignImages : MonoBehaviour
     public Image[] buttons;
     UIManager uIManager;
 
-
+    private void OnEnable() 
+    {
+        
+    }
     public void RefreshButtonList(List<InputStorage> buttonImagesList)
     {
         buttonImages.Clear();
