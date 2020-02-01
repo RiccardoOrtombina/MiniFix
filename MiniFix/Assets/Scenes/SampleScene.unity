@@ -252,10 +252,10 @@ MonoBehaviour:
     inputType: 1
     inputImage: {fileID: 0}
   - inputName: Down
-    inputType: 1
+    inputType: -1
     inputImage: {fileID: 0}
   - inputName: Left
-    inputType: 1
+    inputType: -1
     inputImage: {fileID: 0}
   - inputName: RB
     inputType: 0
@@ -266,8 +266,8 @@ MonoBehaviour:
   - inputName: RT
     inputType: 1
     inputImage: {fileID: 0}
-  - inputName: LT
-    inputType: 1
+  - inputName: RT
+    inputType: -1
     inputImage: {fileID: 0}
   - inputName: R3
     inputType: 0
@@ -321,6 +321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a20a7e63bbac394682f17143932d29c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNumber: 0
+  gooooooooooo: 0
   playerInputs1: []
   playerInputs2: []
   playerInputs3: []
@@ -379,6 +381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a20a7e63bbac394682f17143932d29c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNumber: 0
+  gooooooooooo: 0
   playerInputs1: []
   playerInputs2: []
   playerInputs3: []
