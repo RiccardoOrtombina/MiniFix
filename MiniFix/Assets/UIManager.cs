@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public Image slider;
+    Meter meter;
     public AudioClip[] correctButtonSounds;
     public AudioClip[] wrongButtonSounds;
 
@@ -17,8 +19,12 @@ public class UIManager : MonoBehaviour
     public RectTransform PlayerButtons;
     Animator heartAnimator;
     public Vector3 startingPos;
+    Player player;
 
-
+    private void Update() 
+    {
+        slider.fillAmount = player.currentTime/player.timeReset;
+    }
     private void OnEnable() 
     {
         //startingPos = PlayerButtons.anchoredPosition;
@@ -26,6 +32,8 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GetComponent<Player>();
+        meter = FindObjectOfType<Meter>();
         heartAnimator = heart.GetComponent<Animator>();
     }
 
@@ -36,13 +44,18 @@ public class UIManager : MonoBehaviour
         Destroy(hitPrefab, 2f);
         audioSource.clip = correctButtonSounds[Random.Range(0, correctButtonSounds.Length)];
         audioSource.PlayOneShot(audioSource.clip);
+        meter.RotateMeter();
     }
 
-    public void WrongButton()
+    public void WrongButton(int index)
     {
-        PlayerButtons.localPosition += new Vector3(0, 95, 0);
-        GameObject missPrefab = Instantiate(missPrefabs, parcticlePos, Quaternion.identity);
-        Destroy(missPrefab, 2f);
+        if (index != 0)
+        {
+            PlayerButtons.localPosition += new Vector3(0, 95, 0);
+        }
+
+        GameObject missPrefabInd = Instantiate(missPrefabs, parcticlePos, Quaternion.identity);
+        Destroy(missPrefabInd, 2f);
         audioSource.clip = wrongButtonSounds[Random.Range(0, wrongButtonSounds.Length)];
         audioSource.PlayOneShot(audioSource.clip);
         health--;

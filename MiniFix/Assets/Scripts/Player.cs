@@ -209,6 +209,7 @@ public class Player : MonoBehaviour
         gooooooooooo = false;
         currentTime = timeReset;
         axisPressed = true;
+        points++;
         if(indexListinaBruttina < 19)
         {
             indexListinaBruttina += 1;
@@ -232,18 +233,21 @@ public class Player : MonoBehaviour
 
         if(lives <= 0)
         {
+            UIManager.WrongButton(indexListinaBruttina);
+            YouLost();
             return;
         }
         currentTime = timeReset;
         axisPressed = true;
         if(indexListinaBruttina == 0)
         {
+            UIManager.WrongButton(indexListinaBruttina);
             gooooooooooo = true;
         }
 
         else if(indexListinaBruttina > 0)
         {
-            UIManager.WrongButton();
+            UIManager.WrongButton(indexListinaBruttina);
             indexListinaBruttina -= 1;
             gooooooooooo = true;
         }
