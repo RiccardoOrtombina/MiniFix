@@ -9,6 +9,10 @@ public class Player : MonoBehaviour
     public string numeraccioGiocatore;
     bool axisPressed;
 
+    public float currentTime;
+    public float timeReset;
+    int rounds = 0;
+
     AssignImages ImagesList;
     UIManager UIManager;
     
@@ -42,6 +46,7 @@ public class Player : MonoBehaviour
     {
         ImagesList = GetComponent<AssignImages>();
         UIManager = GetComponent<UIManager>();
+        currentTime = timeReset;
     }
 
     public void SetListoneBruttone(List<InputStorage> iBottoniFannoMale)
@@ -77,6 +82,11 @@ public class Player : MonoBehaviour
         listinaBruttina = listoneBruttone[indexListoneBruttone];
         indexListinaBruttina = 0;
         ImagesList.RefreshButtonList(listinaBruttina);
+        rounds += 1;
+        if(rounds > 5)
+        {
+            timeReset -= 1;
+        }
         gooooooooooo = true;
     }
 
@@ -94,6 +104,13 @@ public class Player : MonoBehaviour
                 {
                     axisPressed = false;
                 }
+            }
+
+            currentTime -= Time.deltaTime;
+            if(currentTime <= 0)
+            {
+                InputtoneSbagliatone();
+                currentTime = timeReset;
             }
 
             if(listinaBruttina[indexListinaBruttina].inputType == 0)
@@ -158,6 +175,7 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Giustino");
         gooooooooooo = false;
+        currentTime = timeReset;
         axisPressed = true;
         if(indexListinaBruttina < 19)
         {
@@ -177,6 +195,7 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Sbagliatino");
         gooooooooooo = false;
+        currentTime = timeReset;
         axisPressed = true;
         if(indexListinaBruttina == 0)
         {
