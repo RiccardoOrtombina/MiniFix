@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public Sprite[] sfondonissimacciucci;
 
     public bool gooooooooooo = false;
+    public bool isSuspended = false;
     public string numeraccioGiocatore;
     bool axisPressed;
 
@@ -15,8 +16,12 @@ public class Player : MonoBehaviour
     public float timeReset = 4;
     int rounds = 0;
 
+    public int points = 0;
+    public int lives = 4;
+
     AssignImages ImagesList;
     UIManager UIManager;
+    GManager gameManager;
     
     public List<InputStorage> playerInputs1 = new List<InputStorage>();
     public List<InputStorage> playerInputs2 = new List<InputStorage>();
@@ -51,8 +56,10 @@ public class Player : MonoBehaviour
         ImagesList = GetComponent<AssignImages>();
     }
 
-    public void SetListoneBruttone(List<InputStorage> iBottoniFannoMale)
+    public void SetListoneBruttone(List<InputStorage> iBottoniFannoMale, GManager manager)
     {
+        gameManager = manager;
+
         foreach(InputStorage bottone in iBottoniFannoMale)
         {
             bottonozzi.Add(bottone);
@@ -87,14 +94,30 @@ public class Player : MonoBehaviour
         rounds += 1;
         if(rounds > 5)
         {
-            timeReset -= 1;
+            timeReset = 2f;
         }
+
+        if(rounds > 10)
+        {
+            timeReset = 1;
+        }
+
+        if(rounds > 15)
+        {
+            gameManager.Win(numeraccioGiocatore);
+        }
+
         gooooooooooo = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(isSuspended == true)
+        {
+            gooooooooooo = false;
+        }
+
         if (gooooooooooo == true)
         {
             if(axisPressed == true)
@@ -204,6 +227,13 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Sbagliatino");
         gooooooooooo = false;
+
+        lives -= 1;
+
+        if(lives <= 0)
+        {
+            return;
+        }
         currentTime = timeReset;
         axisPressed = true;
         if(indexListinaBruttina == 0)
@@ -217,5 +247,12 @@ public class Player : MonoBehaviour
             indexListinaBruttina -= 1;
             gooooooooooo = true;
         }
+    }
+
+    void YouLost()
+    {
+        Debug.Log("Sei stato sospeso");
+        isSuspended = true;
+        gameManager.PlayerSuspended(this);
     }
 }

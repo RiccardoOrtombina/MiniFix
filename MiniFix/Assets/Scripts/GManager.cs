@@ -39,7 +39,7 @@ public class GManager : MonoBehaviour
 
         foreach(Player amico in players)
         {
-            amico.SetListoneBruttone(bottonissimi);
+            amico.SetListoneBruttone(bottonissimi, this);
         }
     }
 
@@ -127,6 +127,59 @@ public class GManager : MonoBehaviour
             player.playerInputs3R3 = playerInputs3R3;
             player.playerInputs4R3 = playerInputs4R3;
             player.playerInputs5R3 = playerInputs5R3;
+        }
+    }
+
+    public void Win(string numerottoPersonaGiocante)
+    {
+        foreach(Player player in players)
+        {
+            player.gooooooooooo = false;
+        }
+
+        Debug.Log("Player " + numerottoPersonaGiocante + " vince");
+    }
+
+    public void PlayerSuspended(Player callingPlayer)
+    {
+        if(players[0].isSuspended == true && players[0].points < players[1].points)
+        {
+            Win(players[1].numeraccioGiocatore);
+        }
+
+        else if(players[1].isSuspended == true && players[1].points < players[0].points)
+        {
+            Win(players[0].numeraccioGiocatore);
+        }
+
+        foreach(Player plplpl in players)
+        {
+            if(plplpl.isSuspended == false)
+            {
+                return;
+            }
+        }
+
+        if (players[0].points > players[1].points)
+        {
+            Win(players[0].numeraccioGiocatore);
+        }
+
+        else if (players[1].points > players[0].points)
+        {
+            Win(players[1].numeraccioGiocatore);
+        }
+
+        else
+        {
+            foreach(Player player in players)
+            {
+                if(player != callingPlayer)
+                {
+                    Win(player.numeraccioGiocatore);
+                    return;
+                }
+            }
         }
     }
 }
