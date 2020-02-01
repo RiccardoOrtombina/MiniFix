@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AssignImages))]
 public class Player : MonoBehaviour
 {
-    public int playerNumber;
     public bool gooooooooooo = false;
-    string numeraccioGiocatore;
-
+    public string numeraccioGiocatore;
+    bool axisPressed;
+    AssignImages ImagesList;
+    UIManager UIManager;
+    
     public List<InputStorage> playerInputs1 = new List<InputStorage>();
     public List<InputStorage> playerInputs2 = new List<InputStorage>();
     public List<InputStorage> playerInputs3 = new List<InputStorage>();
@@ -26,17 +29,26 @@ public class Player : MonoBehaviour
     public List<InputStorage> playerInputs4R3 = new List<InputStorage>();
     public List<InputStorage> playerInputs5R3 = new List<InputStorage>();
 
-    List<List<InputStorage>> listoneBruttone = new List<List<InputStorage>>();
+    public List<List<InputStorage>> listoneBruttone = new List<List<InputStorage>>();
 
     int indexListoneBruttone = 0;
     int indexListinaBruttina = 0;
 
-    List<InputStorage> bottonozzi;
+    List<InputStorage> bottonozzi = new List<InputStorage>();
     List<InputStorage> listinaBruttina = new List<InputStorage>();
+
+    private void OnEnable()
+    {
+        ImagesList = GetComponent<AssignImages>();
+        UIManager = GetComponent<UIManager>();
+    }
 
     public void SetListoneBruttone(List<InputStorage> iBottoniFannoMale)
     {
-        bottonozzi = iBottoniFannoMale;
+        foreach(InputStorage bottone in iBottoniFannoMale)
+        {
+            bottonozzi.Add(bottone);
+        }
 
         listoneBruttone.Add(playerInputs1);
         listoneBruttone.Add(playerInputs2);
@@ -56,21 +68,6 @@ public class Player : MonoBehaviour
         listoneBruttone.Add(playerInputs4R3);
         listoneBruttone.Add(playerInputs5R3);
 
-        numeraccioGiocatore = playerNumber.ToString();
-
-        foreach(InputStorage botton in bottonozzi)
-        {
-            botton.inputName += numeraccioGiocatore;
-        }
-
-        foreach(List<InputStorage> listina in listoneBruttone)
-        {
-            foreach(InputStorage tastoneDaPremerone in listina)
-            {
-                tastoneDaPremerone.inputName += numeraccioGiocatore;
-            }
-        }
-
         SetCurrentListina();
     }
 
@@ -78,6 +75,7 @@ public class Player : MonoBehaviour
     {
         listinaBruttina = listoneBruttone[indexListoneBruttone];
         indexListinaBruttina = 0;
+        ImagesList.RefreshButtonList(listinaBruttina);
         gooooooooooo = true;
     }
 
@@ -86,11 +84,11 @@ public class Player : MonoBehaviour
     {
         if (gooooooooooo == true)
         {
-            Debug.Log(listinaBruttina[indexListinaBruttina].inputName);
+            Debug.Log(listinaBruttina[indexListinaBruttina].inputName + numeraccioGiocatore);
 
             if(listinaBruttina[indexListinaBruttina].inputType == 0)
             {
-                if (Input.GetButtonDown(listinaBruttina[indexListinaBruttina].inputName))
+                if (Input.GetButtonDown(listinaBruttina[indexListinaBruttina].inputName + numeraccioGiocatore))
                 {
                     InputtinoGiustino();
                 }
@@ -104,9 +102,10 @@ public class Player : MonoBehaviour
 
             else if (listinaBruttina[indexListinaBruttina].inputType != 0)
             {
-                if (Input.GetAxisRaw(listinaBruttina[indexListinaBruttina].inputName) == listinaBruttina[indexListinaBruttina].inputType)
+                if (Input.GetAxisRaw(listinaBruttina[indexListinaBruttina].inputName + numeraccioGiocatore) == listinaBruttina[indexListinaBruttina].inputType)
                 {
-                    InputtinoGiustino();
+                    Invoke("InputtinoGiustino", 0.1f);
+                    gooooooooooo = false;
                 }
 
                 else
@@ -125,18 +124,23 @@ public class Player : MonoBehaviour
             {
                 if (sp00ky.inputType == 0)
                 {
-                    if (Input.GetButtonDown(sp00ky.inputName))
+                    if (Input.GetButtonDown(sp00ky.inputName + numeraccioGiocatore))
                     {
                         InputtoneSbagliatone();
                     }
-                }
+                }                
+            }
 
-                else if (sp00ky.inputType != 0)
+            if (sp00ky.inputType != 0)
+            {
+                if (Input.GetAxisRaw(sp00ky.inputName + numeraccioGiocatore) != 0)
                 {
-                    if (Input.GetAxisRaw(sp00ky.inputName) != 0)
+                    if(Input.GetAxisRaw(sp00ky.inputName + numeraccioGiocatore) != listinaBruttina[indexListinaBruttina].inputType)
                     {
-                        InputtoneSbagliatone();
+                        Invoke("InputtoneSbagliatone", 0.1f);
+                        gooooooooooo = false;
                     }
+                    
                 }
             }
         }
@@ -146,13 +150,14 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Giustino");
         gooooooooooo = false;
-        if(indexListinaBruttina < listinaBruttina.Count)
+        if(indexListinaBruttina < 19)
         {
             indexListinaBruttina += 1;
+            UIManager.CorrectButton();
             gooooooooooo = true;
         }
 
-        else if(indexListinaBruttina == listinaBruttina.Count)
+        else if(indexListinaBruttina == 19)
         {
             indexListoneBruttone += 1;
             SetCurrentListina();
@@ -170,6 +175,7 @@ public class Player : MonoBehaviour
 
         else if(indexListinaBruttina > 0)
         {
+            UIManager.WrongButton();
             indexListinaBruttina -= 1;
             gooooooooooo = true;
         }

@@ -219,7 +219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1108649107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232,8 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a20a7e63bbac394682f17143932d29c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 0
   gooooooooooo: 0
+  numeraccioGiocatore: 2
   playerInputs1: []
   playerInputs2: []
   playerInputs3: []
@@ -292,8 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a20a7e63bbac394682f17143932d29c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 0
   gooooooooooo: 0
+  numeraccioGiocatore: 1
   playerInputs1: []
   playerInputs2: []
   playerInputs3: []
@@ -384,6 +384,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261565383487991086, guid: 14673f40ce6e1dd4084db60bb126fa00,
+        type: 3}
+      propertyPath: players.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3261565383487991086, guid: 14673f40ce6e1dd4084db60bb126fa00,
         type: 3}

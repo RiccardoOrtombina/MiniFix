@@ -60,19 +60,19 @@ MonoBehaviour:
     inputType: 0
     inputImage: {fileID: 7434325851868694912, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
       type: 3}
-  - inputName: Up
+  - inputName: CrossVertical
     inputType: 1
     inputImage: {fileID: 6072617809015789834, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
       type: 3}
-  - inputName: Right
+  - inputName: CrossHorizontal
     inputType: 1
     inputImage: {fileID: 8213185674646122455, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
       type: 3}
-  - inputName: Down
+  - inputName: CrossVertical
     inputType: -1
     inputImage: {fileID: -1061352857441666376, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
       type: 3}
-  - inputName: Left
+  - inputName: CrossHorizontal
     inputType: -1
     inputImage: {fileID: 1082626899396981506, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
       type: 3}
@@ -84,11 +84,11 @@ MonoBehaviour:
     inputType: 0
     inputImage: {fileID: 9061208092573186619, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
       type: 3}
-  - inputName: RT
+  - inputName: Triggers
     inputType: 1
     inputImage: {fileID: -7144773616392201407, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
       type: 3}
-  - inputName: RT
+  - inputName: Triggers
     inputType: -1
     inputImage: {fileID: -627560134354624237, guid: 9a10fd86bfd2a7d4fa6d542e92826966,
       type: 3}
