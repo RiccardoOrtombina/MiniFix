@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public bool gooooooooooo = false;
     public string numeraccioGiocatore;
     bool axisPressed;
+
     AssignImages ImagesList;
     UIManager UIManager;
     
@@ -84,7 +85,16 @@ public class Player : MonoBehaviour
     {
         if (gooooooooooo == true)
         {
-            Debug.Log(listinaBruttina[indexListinaBruttina].inputName + numeraccioGiocatore);
+            if(axisPressed == true)
+            {
+                if(Input.GetAxisRaw("CrossVertical" + numeraccioGiocatore) == 0 &&
+                   Input.GetAxisRaw("CrossHorizontal" + numeraccioGiocatore) == 0 &&
+                   Input.GetAxisRaw("Triggers" + numeraccioGiocatore) == 0
+                  )
+                {
+                    axisPressed = false;
+                }
+            }
 
             if(listinaBruttina[indexListinaBruttina].inputType == 0)
             {
@@ -100,12 +110,11 @@ public class Player : MonoBehaviour
                 
             }
 
-            else if (listinaBruttina[indexListinaBruttina].inputType != 0)
+            else if (listinaBruttina[indexListinaBruttina].inputType != 0 && axisPressed == false)
             {
                 if (Input.GetAxisRaw(listinaBruttina[indexListinaBruttina].inputName + numeraccioGiocatore) == listinaBruttina[indexListinaBruttina].inputType)
                 {
-                    Invoke("InputtinoGiustino", 0.1f);
-                    gooooooooooo = false;
+                    InputtinoGiustino();                   
                 }
 
                 else
@@ -131,14 +140,13 @@ public class Player : MonoBehaviour
                 }                
             }
 
-            if (sp00ky.inputType != 0)
+            if (sp00ky.inputType != 0 && axisPressed == false)
             {
                 if (Input.GetAxisRaw(sp00ky.inputName + numeraccioGiocatore) != 0)
                 {
                     if(Input.GetAxisRaw(sp00ky.inputName + numeraccioGiocatore) != listinaBruttina[indexListinaBruttina].inputType)
                     {
-                        Invoke("InputtoneSbagliatone", 0.1f);
-                        gooooooooooo = false;
+                        InputtoneSbagliatone();
                     }
                     
                 }
@@ -150,6 +158,7 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Giustino");
         gooooooooooo = false;
+        axisPressed = true;
         if(indexListinaBruttina < 19)
         {
             indexListinaBruttina += 1;
@@ -168,6 +177,7 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Sbagliatino");
         gooooooooooo = false;
+        axisPressed = true;
         if(indexListinaBruttina == 0)
         {
             gooooooooooo = true;
