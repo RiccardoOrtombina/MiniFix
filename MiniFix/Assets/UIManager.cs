@@ -5,6 +5,10 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    public AudioClip[] correctButtonSounds;
+    public AudioClip[] wrongButtonSounds;
+
+    AudioSource audioSource;
     int health = 4;
     public GameObject heart;
     public GameObject hitPrefabs;
@@ -22,6 +26,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         heartAnimator = heart.GetComponent<Animator>();
     }
 
@@ -30,6 +35,8 @@ public class UIManager : MonoBehaviour
         PlayerButtons.localPosition -= new Vector3(0, 95, 0);
         GameObject hitPrefab = Instantiate(hitPrefabs, parcticlePos, Quaternion.identity);
         Destroy(hitPrefab, 2f);
+        audioSource.clip = correctButtonSounds[Random.Range(0, correctButtonSounds.Length)];
+        audioSource.PlayOneShot(audioSource.clip);
     }
 
     public void WrongButton()
@@ -37,6 +44,8 @@ public class UIManager : MonoBehaviour
         PlayerButtons.localPosition += new Vector3(0, 95, 0);
         GameObject missPrefab = Instantiate(missPrefabs, parcticlePos, Quaternion.identity);
         Destroy(missPrefab, 2f);
+        audioSource.clip = wrongButtonSounds[Random.Range(0, wrongButtonSounds.Length)];
+        audioSource.PlayOneShot(audioSource.clip);
         health--;
         if(health == 3)
         {
