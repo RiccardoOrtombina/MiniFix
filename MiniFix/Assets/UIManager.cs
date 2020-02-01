@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public Image slider;
-    Meter meter;
     public AudioClip[] correctButtonSounds;
     public AudioClip[] wrongButtonSounds;
 
@@ -33,7 +32,6 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         player = GetComponent<Player>();
-        meter = FindObjectOfType<Meter>();
         heartAnimator = heart.GetComponent<Animator>();
     }
 
@@ -44,7 +42,6 @@ public class UIManager : MonoBehaviour
         Destroy(hitPrefab, 2f);
         audioSource.clip = correctButtonSounds[Random.Range(0, correctButtonSounds.Length)];
         audioSource.PlayOneShot(audioSource.clip);
-        meter.RotateMeter();
     }
 
     public void WrongButton(int index)

@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(AssignImages))]
 public class Player : MonoBehaviour
 {
+    Meter meter;
     public GameObject[] sfondonissimacciucci;
     int sfondinoIndexino = -1;
     GameObject currentSfondissimo;
@@ -63,6 +64,7 @@ public class Player : MonoBehaviour
         UIManager = GetComponent<UIManager>();
         currentTime = timeReset;
         ImagesList = GetComponent<AssignImages>();
+        meter = FindObjectOfType<Meter>();
     }
 
     public void SetListoneBruttone(List<InputStorage> iBottoniFannoMale, GManager manager)
@@ -257,11 +259,13 @@ public class Player : MonoBehaviour
             indexListinaBruttina += 1;
             UIManager.CorrectButton();
             gooooooooooo = true;
+            meter.RotateMeter(numeraccioGiocatore);
         }
 
         else if(indexListinaBruttina == 19)
         {
             indexListoneBruttone += 1;
+            meter.RotateMeter(numeraccioGiocatore);
             StartCoroutine(changeSceneTimer());
         }
     }
