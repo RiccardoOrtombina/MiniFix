@@ -12,7 +12,13 @@ public class UIManager : MonoBehaviour
     public Vector3 parcticlePos;
     public RectTransform PlayerButtons;
     Animator heartAnimator;
+    Vector3 startingPos;
 
+
+    private void OnEnable() 
+    {
+        startingPos = PlayerButtons.anchoredPosition;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -48,5 +54,10 @@ public class UIManager : MonoBehaviour
         {
             heartAnimator.SetTrigger("h4IsBroken");
         }
+    }
+
+    public void ResetPosition()
+    {
+        PlayerButtons.anchoredPosition = new Vector3 (startingPos.x, startingPos.y, startingPos.z);
     }
 }

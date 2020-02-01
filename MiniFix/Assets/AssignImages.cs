@@ -8,17 +8,21 @@ public class AssignImages : MonoBehaviour
     public List<InputStorage> inputStorages;
     public List<Sprite> buttonImages = new List<Sprite>();
     public Image[] buttons;
-
+    UIManager uIManager;
 
 
     public void RefreshButtonList(List<InputStorage> buttonImagesList)
     {
+        buttonImages.Clear();
         foreach (InputStorage buttonImagesL in buttonImagesList)
         {
             buttonImages.Add(buttonImagesL.inputImage);
         }
 
         AssignImagesToButton();
+        
+        GetComponent<UIManager>().ResetPosition();
+
     }
 
     public void AssignImagesToButton()
