@@ -5,7 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(AssignImages))]
 public class Player : MonoBehaviour
 {
-    public Sprite[] sfondonissimacciucci;
+    public GameObject[] sfondonissimacciucci;
+    int sfondinoIndexino = -1;
+    GameObject currentSfondissimo;
 
     public bool gooooooooooo = false;
     public bool isSuspended = false;
@@ -49,6 +51,13 @@ public class Player : MonoBehaviour
     List<InputStorage> bottonozzi = new List<InputStorage>();
     List<InputStorage> listinaBruttina = new List<InputStorage>();
 
+    IEnumerator changeSceneTimer()
+    {
+        float timer = 1;
+        yield return new WaitForSeconds(timer);
+        SetCurrentListina();
+    }
+
     private void Start()
     {       
         UIManager = GetComponent<UIManager>();
@@ -91,6 +100,22 @@ public class Player : MonoBehaviour
         listinaBruttina = listoneBruttone[indexListoneBruttone];
         indexListinaBruttina = 0;
         GetComponent<AssignImages>().RefreshButtonList(listinaBruttina);
+
+        if (currentSfondissimo != null)
+        {
+            currentSfondissimo.SetActive(false);
+        }
+
+        if (sfondinoIndexino < sfondonissimacciucci.Length - 1)
+        {
+            sfondinoIndexino += 1;
+        }
+        else sfondinoIndexino = 0;
+
+        currentSfondissimo = sfondonissimacciucci[sfondinoIndexino];
+        currentSfondissimo.SetActive(true);
+
+        //CambiaSfondino();
         rounds += 1;
         if(rounds > 5)
         {
@@ -108,6 +133,23 @@ public class Player : MonoBehaviour
         }
 
         gooooooooooo = true;
+    }
+
+    void CambiaSfondino()
+    {
+        if (currentSfondissimo != null)
+        {
+            currentSfondissimo.SetActive(false);
+        }
+
+        if (sfondinoIndexino < sfondonissimacciucci.Length - 1)
+        {
+            sfondinoIndexino += 1;
+        }
+        else sfondinoIndexino = 0;
+
+        currentSfondissimo = sfondonissimacciucci[sfondinoIndexino];
+        currentSfondissimo.SetActive(true);
     }
 
     // Update is called once per frame
@@ -220,7 +262,7 @@ public class Player : MonoBehaviour
         else if(indexListinaBruttina == 19)
         {
             indexListoneBruttone += 1;
-            SetCurrentListina();
+            StartCoroutine(changeSceneTimer());
         }
     }
 
