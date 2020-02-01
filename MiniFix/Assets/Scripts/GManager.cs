@@ -107,7 +107,10 @@ public class GManager : MonoBehaviour
     {
         foreach(Player player in players)
         {
-            player.playerInputs1 = playerInputs1;
+            foreach(InputStorage input in playerInputs1)
+            {
+                player.playerInputs1.Add(input);
+            }
             player.playerInputs2 = playerInputs2;
             player.playerInputs3 = playerInputs3;
             player.playerInputs4 = playerInputs4;
