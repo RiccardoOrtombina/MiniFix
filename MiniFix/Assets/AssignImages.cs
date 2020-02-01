@@ -6,13 +6,18 @@ using UnityEngine.UI;
 public class AssignImages : MonoBehaviour
 {
     public List<InputStorage> inputStorages;
-    List<Sprite> buttonImages;
-
+    public List<Sprite> buttonImages = new List<Sprite>();
     public Image[] buttons;
+
+
 
     public void RefreshButtonList(List<InputStorage> buttonImagesList)
     {
-        inputStorages = buttonImagesList;
+        foreach (InputStorage buttonImagesL in buttonImagesList)
+        {
+            buttonImages.Add(buttonImagesL.inputImage);
+        }
+
         AssignImagesToButton();
     }
 
