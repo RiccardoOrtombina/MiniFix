@@ -10,6 +10,12 @@ public class AssignImages : MonoBehaviour
 
     public Image[] buttons;
 
+    public void RefreshButtonList(List<InputStorage> buttonImagesList)
+    {
+        inputStorages = buttonImagesList;
+        AssignImagesToButton();
+    }
+
     public void AssignImagesToButton()
     {
         foreach (InputStorage inputStorage in inputStorages)
