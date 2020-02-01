@@ -31,6 +31,10 @@ public class GManager : MonoBehaviour
         GenerateRound1Lists();
         GenerateOtherLists();
         SetPlayersLists();
+        foreach(Player amico in players)
+        {
+            amico.SetListoneBruttone(playerInputs5R3);
+        }
     }
 
     void GenerateRound1Lists()
