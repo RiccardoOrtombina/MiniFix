@@ -93,4 +93,11 @@ public class GManager : MonoBehaviour
         }
     }
 
+    void SetPlayersLists()
+    {
+        foreach(Player player in players)
+        {
+
+        }
+    }
 }
