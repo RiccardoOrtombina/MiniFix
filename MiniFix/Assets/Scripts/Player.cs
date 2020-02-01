@@ -5,12 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(AssignImages))]
 public class Player : MonoBehaviour
 {
+    public Sprite[] sfondonissimacciucci;
+
     public bool gooooooooooo = false;
     public string numeraccioGiocatore;
     bool axisPressed;
 
     public float currentTime;
-    public float timeReset;
+    public float timeReset = 4;
     int rounds = 0;
 
     AssignImages ImagesList;
@@ -42,11 +44,11 @@ public class Player : MonoBehaviour
     List<InputStorage> bottonozzi = new List<InputStorage>();
     List<InputStorage> listinaBruttina = new List<InputStorage>();
 
-    private void OnEnable()
-    {
-        ImagesList = GetComponent<AssignImages>();
+    private void Start()
+    {       
         UIManager = GetComponent<UIManager>();
         currentTime = timeReset;
+        ImagesList = GetComponent<AssignImages>();
     }
 
     public void SetListoneBruttone(List<InputStorage> iBottoniFannoMale)
@@ -81,7 +83,7 @@ public class Player : MonoBehaviour
     {
         listinaBruttina = listoneBruttone[indexListoneBruttone];
         indexListinaBruttina = 0;
-        ImagesList.RefreshButtonList(listinaBruttina);
+        GetComponent<AssignImages>().RefreshButtonList(listinaBruttina);
         rounds += 1;
         if(rounds > 5)
         {
@@ -106,7 +108,6 @@ public class Player : MonoBehaviour
                 }
             }
 
-            currentTime -= Time.deltaTime;
             if(currentTime <= 0)
             {
                 InputtoneSbagliatone();
@@ -139,6 +140,14 @@ public class Player : MonoBehaviour
                     ControllaInputtozziSbagliati();
                 }
             }
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if(gooooooooooo == true)
+        {
+            currentTime -= 0.02f;
         }
     }
 
