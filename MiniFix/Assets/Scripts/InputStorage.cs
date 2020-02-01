@@ -9,5 +9,5 @@ public class InputStorage
     public string inputName;
     [Range(-1 , 1)]
     public int inputType;
-    public Image inputImage;
+    public Sprite inputImage;
 }

@@ -14,7 +14,7 @@ public class AssignImages : MonoBehaviour
     {
         foreach (InputStorage inputStorage in inputStorages)
         {
-            buttonImages.Add(inputStorage.inputImage.sprite);
+            buttonImages.Add(inputStorage.inputImage);
         }
 
         int index = 0;
