@@ -1,0 +1,295 @@
+fileFormatVersion: 2
+guid: d13ab6e2f3b4920468cf734f1e44e4f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4288212461287261467
+    second: Character liscio blu_0
+  - first:
+      213: -206949759212686601
+    second: Character liscio blu_1
+  - first:
+      213: -3350134847536020324
+    second: Character liscio blu_2
+  - first:
+      213: -8374649285872505586
+    second: Character liscio blu_3
+  - first:
+      213: -5112391366042134395
+    second: Character liscio blu_4
+  - first:
+      213: -2457479490291541023
+    second: Character liscio blu_5
+  - first:
+      213: -4455490160095495748
+    second: Character liscio blu_6
+  - first:
+      213: 8819676227171306417
+    second: Character liscio blu_7
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character liscio blu_0
+      rect:
+        serializedVersion: 2
+        x: 177.34991
+        y: 1301.8872
+        width: 420.38446
+        height: 426.44177
+      alignment: 9
+      pivot: {x: 0.49762642, y: 0.49974623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcaa7d3531e368e47add28580b5608a9
+      internalID: -4288212461287261467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character liscio blu_1
+      rect:
+        serializedVersion: 2
+        x: 1595.151
+        y: 1299.0793
+        width: 508.21594
+        height: 496.92065
+      alignment: 9
+      pivot: {x: 0.49793977, y: 0.5049511}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e9dae2118bb904db39e6c3f8abd012
+      internalID: -206949759212686601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character liscio blu_2
+      rect:
+        serializedVersion: 2
+        x: 175.62103
+        y: 619.7539
+        width: 120.54636
+        height: 521.8447
+      alignment: 9
+      pivot: {x: 0.48865727, y: 0.46612746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c8e90cc108d6445b28e5dd24e2c5c6
+      internalID: -3350134847536020324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character liscio blu_3
+      rect:
+        serializedVersion: 2
+        x: 454.0192
+        y: 662.9358
+        width: 161.43338
+        height: 493.0725
+      alignment: 9
+      pivot: {x: 0.4989184, y: 0.5010706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68ccbda3d950db4cbf4aec47f2ac5ba
+      internalID: -8374649285872505586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character liscio blu_4
+      rect:
+        serializedVersion: 2
+        x: 1144.6694
+        y: 814.74524
+        width: 259.8651
+        height: 443.0995
+      alignment: 9
+      pivot: {x: 0.4963212, y: 0.5015911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127241adc6e5c1043a97e2909ae37dd4
+      internalID: -5112391366042134395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character liscio blu_5
+      rect:
+        serializedVersion: 2
+        x: 770.62415
+        y: 443.75708
+        width: 191.7201
+        height: 170.51941
+      alignment: 9
+      pivot: {x: 0.49538416, y: 0.505766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c732905cf048e143b3d8fdf32e1ff51
+      internalID: -2457479490291541023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character liscio blu_6
+      rect:
+        serializedVersion: 2
+        x: 1062.8884
+        y: 130.31355
+        width: 167.49072
+        height: 623.30524
+      alignment: 9
+      pivot: {x: 0.5029721, y: 0.49925202}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1c4d6518777334a93baa5d640fea15
+      internalID: -4455490160095495748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character liscio blu_7
+      rect:
+        serializedVersion: 2
+        x: 1667.587
+        y: 165.42319
+        width: 175.0625
+        height: 570.30347
+      alignment: 9
+      pivot: {x: 0.4919051, y: 0.49811512}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad89cd78792b604da8dd5996ed67a0f
+      internalID: 8819676227171306417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 637161954513095818
+  assetBundleName: 
+  assetBundleVariant: 
