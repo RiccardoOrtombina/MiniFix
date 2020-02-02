@@ -6,6 +6,7 @@ using TMPro;
 [RequireComponent(typeof(AssignImages))]
 public class Player : MonoBehaviour
 {
+    public AudioSource musicSource;
     public SceneManager sceneManager;
     public TextMeshProUGUI score;
     public Animator animatorChange;
@@ -143,16 +144,19 @@ public class Player : MonoBehaviour
         if(rounds > 5)
         {
             timeReset = 2f;
+            musicSource.pitch += .2f;
         }
 
         if(rounds > 10)
         {
             timeReset = 1;
+            musicSource.pitch += .2f;
         }
 
         if(rounds > 15)
         {
             gameManager.Win(numeraccioGiocatore);
+            musicSource.pitch += .2f;
         }
 
         gooooooooooo = true;
