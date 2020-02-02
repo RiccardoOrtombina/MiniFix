@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2118107995219867774}
   - component: {fileID: 19990485254287662}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Martellozzo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623984555504137996}
-  m_LocalRotation: {x: 0, y: 0, z: 0.73648596, w: 0.6764528}
+  m_LocalRotation: {x: 0, y: 0, z: 0.92184883, w: 0.3875497}
   m_LocalPosition: {x: 2.385179, y: -0.00000035762787, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5421725356720086615}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 94.866005}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 134.39601}
 --- !u!114 &19990485254287662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,7 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725356720086615}
   - component: {fileID: 5421725356720086612}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,14 +71,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5421725356720086614}
-  m_LocalRotation: {x: 0, y: 0, z: 0.45214877, w: 0.89194256}
+  m_LocalRotation: {x: 0, y: 0, z: -0.4771159, w: 0.8788404}
   m_LocalPosition: {x: 2.067717, y: -0.000000059604645, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2118107995219867774}
   m_Father: {fileID: 5421725358348433565}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 53.763004}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -56.994003}
 --- !u!114 &5421725356720086612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 2.38518
+  m_Length: 2.3851862
   m_ChildTransform: {fileID: 2118107995219867774}
   m_AttachedIK: {fileID: 5421725356854273619}
 --- !u!1 &5421725356854273621
@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725356854273618}
   - component: {fileID: 5421725356854273619}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ik RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,15 +150,15 @@ MonoBehaviour:
     m_SolverPoses:
     - m_BoneTransform: {fileID: 5421725356720086615}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0.45214877, w: 0.89194256}
+      solverRotation: {x: 0, y: 0, z: -0.47711486, w: 0.8788409}
       defaultLocalRotation: {x: 0, y: 0, z: 0.44677302, w: 0.89464736}
     - m_BoneTransform: {fileID: 2118107995219867774}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0.73648596, w: 0.6764528}
+      solverRotation: {x: 0, y: 0, z: 0.92184865, w: 0.38755012}
       defaultLocalRotation: {x: -0, y: -0, z: 0.4089417, w: 0.9125606}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -122.4924, y: 55.33005, z: -1.250651}
+    targetPosition: {x: -39.933094, y: -11.626114, z: 52.467598}
     flip: 0
 --- !u!1 &5421725357078989459
 GameObject:
@@ -170,7 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725357078989457}
   - component: {fileID: 5421725357078989456}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ik LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,15 +215,15 @@ MonoBehaviour:
     m_SolverPoses:
     - m_BoneTransform: {fileID: 5421725357544902005}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: -0.9581941, w: -0.286119}
+      solverRotation: {x: 0, y: 0, z: -0.98517495, w: 0.17155261}
       defaultLocalRotation: {x: 0, y: 0, z: -0.98458785, w: 0.17489117}
     - m_BoneTransform: {fileID: 5421725357882920656}
       solverPosition: {x: 0, y: 0, z: 0}
-      solverRotation: {x: 0, y: 0, z: 0.65694, w: 0.7539429}
+      solverRotation: {x: 0, y: 0, z: 0, w: 1}
       defaultLocalRotation: {x: 0, y: 0, z: -0.117625214, w: 0.99305815}
     m_Weight: 1
     m_RestoreDefaultPose: 1
-    targetPosition: {x: -123.8824, y: 52.780052, z: -1.250651}
+    targetPosition: {x: -38.34132, y: -11.58087, z: 52.467598}
     flip: 0
 --- !u!1 &5421725357143662955
 GameObject:
@@ -235,7 +235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725357143662952}
   - component: {fileID: 5421725357143662953}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightLegUpper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 2.5078933
+  m_Length: 2.5588424
   m_ChildTransform: {fileID: 5421725358522823850}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &5421725357161940314
@@ -283,7 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725357161940315}
   - component: {fileID: 5421725357161940312}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5421725357231289352}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SpriteMeshes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 5421725357363148069}
   - component: {fileID: 5421725357363148066}
   - component: {fileID: 5421725357363148068}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 8
   m_BoneTransforms:
   - {fileID: 5421725358348433565}
   - {fileID: 5421725356720086615}
@@ -449,7 +449,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 8
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -474,7 +474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725357417246605}
   - component: {fileID: 5421725357417246602}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.1128917
+  m_Length: 1.112891
   m_ChildTransform: {fileID: 5421725358742123057}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &5421725357479453806
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 5421725357479453804}
   - component: {fileID: 5421725357479453805}
   - component: {fileID: 5421725357479453807}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 4
   m_BoneTransforms:
   - {fileID: 5421725357841126885}
   - {fileID: 5421725358652971140}
@@ -605,7 +605,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 4
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -631,7 +631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725357532719686}
   - component: {fileID: 5421725357532719687}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725357544902005}
   - component: {fileID: 5421725357544902002}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -692,14 +692,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5421725357544902004}
-  m_LocalRotation: {x: 0, y: 0, z: -0.9581941, w: -0.286119}
+  m_LocalRotation: {x: 0, y: 0, z: -0.985175, w: 0.17155227}
   m_LocalPosition: {x: 2.364516, y: -0.96217626, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5421725357882920656}
   m_Father: {fileID: 5421725358742123057}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -213.252}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -160.244}
 --- !u!114 &5421725357544902002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 2.1812205
+  m_Length: 2.18122
   m_ChildTransform: {fileID: 5421725357882920656}
   m_AttachedIK: {fileID: 5421725357078989456}
 --- !u!1 &5421725357563873286
@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 5421725357563873282}
   - component: {fileID: 5421725357563873285}
   - component: {fileID: 3084526433933447653}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -765,7 +765,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_BoneTransforms:
   - {fileID: 5421725358733099601}
 --- !u!137 &3084526433933447653
@@ -805,7 +805,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -829,7 +829,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725357805705253}
   - component: {fileID: 733430668}
-  m_Layer: 0
+  - component: {fileID: 24572797254351172}
+  m_Layer: 5
   m_Name: BlueMan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -845,7 +846,7 @@ Transform:
   m_GameObject: {fileID: 5421725357805705252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -130.12555, y: 53.348145, z: -1.2506509}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 9.350403, y: 9.350403, z: 9.350403}
   m_Children:
   - {fileID: 5421725357231289352}
   - {fileID: 5421725357417246605}
@@ -872,6 +873,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &24572797254351172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5421725357805705252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f9b09de9ba3aa54e9358b8b26b71e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHammering: 0
+  isIdle: 0
+  isRunning: 1
+  LeftBound: 918
+  RightBound: 1700
 --- !u!1 &5421725357816064479
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,7 +900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725357816064476}
   - component: {fileID: 5421725357816064477}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ik RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -947,7 +965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725357841126885}
   - component: {fileID: 5421725357841126882}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftLegUpper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -982,7 +1000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 2.4355576
+  m_Length: 2.4355552
   m_ChildTransform: {fileID: 5421725358652971140}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &5421725357882920659
@@ -995,7 +1013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725357882920656}
   - component: {fileID: 5421725357882920657}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1009,13 +1027,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5421725357882920659}
-  m_LocalRotation: {x: 0, y: 0, z: 0.65694, w: 0.7539429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.1812186, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5421725357544902005}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 82.134}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5421725357882920657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,7 +1061,7 @@ GameObject:
   - component: {fileID: 5421725357910789850}
   - component: {fileID: 5421725357910789851}
   - component: {fileID: 5421725357910789853}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1081,7 +1099,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 4
   m_BoneTransforms:
   - {fileID: 5421725357544902005}
   - {fileID: 5421725357882920656}
@@ -1122,7 +1140,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 4
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1147,7 +1165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725358168447566}
   - component: {fileID: 5421725358168447567}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ik LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1212,7 +1230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725358250208577}
   - component: {fileID: 5421725358250208590}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1247,7 +1265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 1.5279658
+  m_Length: 1.5279691
   m_ChildTransform: {fileID: 5421725358733099601}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &5421725358321374184
@@ -1261,7 +1279,7 @@ GameObject:
   - component: {fileID: 5421725358321374196}
   - component: {fileID: 5421725358321374199}
   - component: {fileID: 5421725358321374185}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1299,7 +1317,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_BoneTransforms:
   - {fileID: 5421725358250208577}
 --- !u!137 &5421725358321374185
@@ -1339,7 +1357,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1363,7 +1381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725358348433565}
   - component: {fileID: 5421725358348433562}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1398,7 +1416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 2.0677154
+  m_Length: 2.067717
   m_ChildTransform: {fileID: 5421725356720086615}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &5421725358462168247
@@ -1412,7 +1430,7 @@ GameObject:
   - component: {fileID: 5421725358462168245}
   - component: {fileID: 5421725358462168242}
   - component: {fileID: 5421725358462168244}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1450,7 +1468,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_BoneTransforms:
   - {fileID: 5421725358742123057}
 --- !u!137 &5421725358462168244
@@ -1490,7 +1508,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1514,7 +1532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725358522823850}
   - component: {fileID: 5421725358522823851}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightLegLower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1549,7 +1567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 2.3600059
+  m_Length: 2.3600016
   m_ChildTransform: {fileID: 5421725357532719686}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &5421725358649220356
@@ -1563,7 +1581,7 @@ GameObject:
   - component: {fileID: 5421725358649220354}
   - component: {fileID: 5421725358649220355}
   - component: {fileID: 5421725358649220357}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Waist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1601,7 +1619,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_BoneTransforms:
   - {fileID: 5421725357417246605}
 --- !u!137 &5421725358649220357
@@ -1641,7 +1659,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1665,7 +1683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725358652971140}
   - component: {fileID: 5421725358652971141}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftLegLower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1700,7 +1718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Length: 2.327999
+  m_Length: 2.3280027
   m_ChildTransform: {fileID: 5421725357161940315}
   m_AttachedIK: {fileID: 0}
 --- !u!1 &5421725358654884724
@@ -1714,7 +1732,7 @@ GameObject:
   - component: {fileID: 5421725358654884722}
   - component: {fileID: 5421725358654884723}
   - component: {fileID: 5421725358654884725}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1752,7 +1770,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_BoneTransforms:
   - {fileID: 5421725357143662952}
   - {fileID: 5421725358522823850}
@@ -1794,7 +1812,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1820,7 +1838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725358733099601}
   - component: {fileID: 5421725358733099614}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1867,7 +1885,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5421725358742123057}
   - component: {fileID: 5421725358742123070}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1916,7 +1934,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5421725358744194342}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1952,7 +1970,7 @@ GameObject:
   - component: {fileID: 4794375017724730690}
   - component: {fileID: 8131729993584083563}
   - component: {fileID: 167299107555856306}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Pamelo Martelo blu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1990,7 +2008,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 7
   m_BoneTransforms:
   - {fileID: 2118107995219867774}
 --- !u!137 &167299107555856306
@@ -2030,7 +2048,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 7
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0

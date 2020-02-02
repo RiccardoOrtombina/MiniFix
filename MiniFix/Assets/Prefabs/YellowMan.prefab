@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8056335046899366740}
   - component: {fileID: 4183617154520142590}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Martellozzo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643354892381568}
   - component: {fileID: 7280643354892381569}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ik LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643354957071993}
   - component: {fileID: 7280643354957071992}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightLegUpper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643354975363658}
   - component: {fileID: 7280643354975363657}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643355145910598}
   - component: {fileID: 7280643355145910597}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643355280015683}
   - component: {fileID: 7280643355280015682}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ik RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 7280643355292894077}
   - component: {fileID: 7280643355292894076}
   - component: {fileID: 4773712794081530270}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_BoneTransforms:
   - {fileID: 7280643356174709492}
   - {fileID: 7280643356541861781}
@@ -411,7 +411,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -437,7 +437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643355366779492}
   - component: {fileID: 7280643355366779491}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -486,7 +486,7 @@ GameObject:
   - component: {fileID: 7280643355377299219}
   - component: {fileID: 7280643355377299220}
   - component: {fileID: 5086356691871583985}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_BoneTransforms:
   - {fileID: 7280643356622021952}
 --- !u!137 &5086356691871583985
@@ -588,7 +588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643355413302615}
   - component: {fileID: 7280643355413302614}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -634,7 +634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7280643355581567769}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SpriteMeshes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 7280643355713425972}
   - component: {fileID: 7280643355713425971}
   - component: {fileID: 4243726964753691130}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 8
   m_BoneTransforms:
   - {fileID: 7280643356707069836}
   - {fileID: 7280643355145910598}
@@ -754,7 +754,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 8
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -779,7 +779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643355759200412}
   - component: {fileID: 7280643355759200411}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -829,7 +829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643355981872479}
   - component: {fileID: 7280643355981872478}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ik LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -894,7 +894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643356166344397}
   - component: {fileID: 7280643356166344396}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ik RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -959,7 +959,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643356174709492}
   - component: {fileID: 7280643356174709491}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftLegUpper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,7 +1007,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643356214722356}
   - component: {fileID: 3339642539385812226}
-  m_Layer: 0
+  - component: {fileID: 8969407900746022452}
+  m_Layer: 5
   m_Name: YellowMan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1050,6 +1051,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8969407900746022452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7280643356214722357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f9b09de9ba3aa54e9358b8b26b71e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHammering: 0
+  isIdle: 0
+  isRunning: 0
+  LeftBound: -10
+  RightBound: 10
 --- !u!1 &7280643356233181634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,7 +1078,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643356233181633}
   - component: {fileID: 7280643356233181632}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1108,7 +1126,7 @@ GameObject:
   - component: {fileID: 7280643356336646603}
   - component: {fileID: 7280643356336646602}
   - component: {fileID: 5040210087461759575}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1146,7 +1164,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 4
   m_BoneTransforms:
   - {fileID: 7280643355366779492}
   - {fileID: 7280643356233181633}
@@ -1187,7 +1205,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 4
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1212,7 +1230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643356403307451}
   - component: {fileID: 7280643356403307450}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightLegLower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1261,7 +1279,7 @@ GameObject:
   - component: {fileID: 7280643356535483491}
   - component: {fileID: 7280643356535483490}
   - component: {fileID: 2210971646464717803}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1299,7 +1317,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   m_BoneTransforms:
   - {fileID: 7280643354957071993}
   - {fileID: 7280643356403307451}
@@ -1341,7 +1359,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 6
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1368,7 +1386,7 @@ GameObject:
   - component: {fileID: 7280643356538141203}
   - component: {fileID: 7280643356538141202}
   - component: {fileID: 1662771868012732301}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Waist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1406,7 +1424,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_BoneTransforms:
   - {fileID: 7280643355759200412}
 --- !u!137 &1662771868012732301
@@ -1446,7 +1464,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1470,7 +1488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643356541861781}
   - component: {fileID: 7280643356541861780}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LeftLegLower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1518,7 +1536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643356614317344}
   - component: {fileID: 7280643356614317359}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1567,7 +1585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7280643356616305207}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Ik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1602,7 +1620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643356622021952}
   - component: {fileID: 7280643356622021967}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1649,7 +1667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643356676049488}
   - component: {fileID: 7280643356676049503}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1697,7 +1715,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7280643356707069836}
   - component: {fileID: 7280643356707069835}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1746,7 +1764,7 @@ GameObject:
   - component: {fileID: 7280643356738843877}
   - component: {fileID: 7280643356738843878}
   - component: {fileID: 174081390074285507}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1784,7 +1802,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_BoneTransforms:
   - {fileID: 7280643356676049488}
 --- !u!137 &174081390074285507
@@ -1849,7 +1867,7 @@ GameObject:
   - component: {fileID: 7280643356862811044}
   - component: {fileID: 7280643356862811043}
   - component: {fileID: 1616551315605800220}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1887,7 +1905,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_BoneTransforms:
   - {fileID: 7280643356614317344}
 --- !u!137 &1616551315605800220
@@ -1927,7 +1945,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
@@ -1952,7 +1970,7 @@ GameObject:
   - component: {fileID: 7131605258942039677}
   - component: {fileID: 8811183349328112877}
   - component: {fileID: 1307601148477608047}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Pamelo Martelo arancio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1990,7 +2008,7 @@ MonoBehaviour:
   m_Materials:
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 7
   m_BoneTransforms:
   - {fileID: 8056335046899366740}
 --- !u!137 &1307601148477608047
@@ -2030,7 +2048,7 @@ SkinnedMeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 7
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
