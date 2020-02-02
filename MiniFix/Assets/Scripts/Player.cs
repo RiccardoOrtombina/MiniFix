@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [RequireComponent(typeof(AssignImages))]
 public class Player : MonoBehaviour
 {
+    public TextMeshProUGUI score;
+    public Animator animatorChange;
     Meter meter;
     public GameObject[] sfondonissimacciucci;
     int sfondinoIndexino = -1;
@@ -157,6 +160,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        score.text = points.ToString();
+
         if(isSuspended == true)
         {
             gooooooooooo = false;
@@ -266,6 +271,7 @@ public class Player : MonoBehaviour
         {
             indexListoneBruttone += 1;
             meter.RotateMeter(numeraccioGiocatore);
+            animatorChange.SetTrigger("ChangeScene");
             StartCoroutine(changeSceneTimer());
         }
     }
