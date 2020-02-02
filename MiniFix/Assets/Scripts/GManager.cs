@@ -1,9 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.EventSystems;
 
 public class GManager : MonoBehaviour
 {
+
+    public GameObject winScreen;
+    public GameObject firstSelectedObj;
+    public TextMeshProUGUI winText;
     public InputStorage[] inputs;
     List<InputStorage> bottonissimi = new List<InputStorage>();
     public Player[] players;
@@ -136,7 +142,17 @@ public class GManager : MonoBehaviour
         {
             player.gooooooooooo = false;
         }
-
+    
+        if (numerottoPersonaGiocante == "1")
+        {
+            winText.text = "TEAM ORANGE ARE THE BEST FIXERS";
+        }
+        else
+        {
+            winText.text = "TEAM BLUE ARE THE BEST FIXERS";
+        }
+        winScreen.SetActive(true);
+        GameObject.Find ("EventSystem").GetComponent<EventSystem>().SetSelectedGameObject(firstSelectedObj, null);
         Debug.Log("Player " + numerottoPersonaGiocante + " vince");
     }
 
