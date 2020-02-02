@@ -6,6 +6,7 @@ using TMPro;
 [RequireComponent(typeof(AssignImages))]
 public class Player : MonoBehaviour
 {
+    public SceneManager sceneManager;
     public TextMeshProUGUI score;
     public Animator animatorChange;
     Meter meter;
@@ -177,6 +178,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetButtonDown("Pause"))
+        {
+            sceneManager.PauseGame();
+        }
         score.text = points.ToString();
 
         if(isSuspended == true)
