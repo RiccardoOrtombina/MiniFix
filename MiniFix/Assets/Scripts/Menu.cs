@@ -11,7 +11,7 @@ public class Menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("StartMenu", 1.5f);
+        Invoke("StartMenu", 7.25f);
     }
 
     public void StartMenu()
@@ -21,7 +21,7 @@ public class Menu : MonoBehaviour
 
     public void LoadNewGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex + 1);
         GameObject.Find ("EventSystem").GetComponent<EventSystem>().SetSelectedGameObject(firstSelectedObj, null);
     }
 
