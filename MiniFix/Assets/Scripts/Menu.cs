@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public AudioClip[] buttonSounds;
+    public AudioSource audioSource;
     public GameObject menu;
     public GameObject firstSelectedObj;
     // Start is called before the first frame update
@@ -28,5 +30,10 @@ public class Menu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-    } 
+    }
+    public void ButtonSound()
+    {
+        audioSource.clip = buttonSounds[Random.Range(0, buttonSounds.Length)];
+        audioSource.PlayOneShot(audioSource.clip);
+    }
 }
