@@ -6,6 +6,8 @@ using TMPro;
 [RequireComponent(typeof(AssignImages))]
 public class Player : MonoBehaviour
 {
+    public GameObject fasterText1;
+    public GameObject fasterText2;
     public AudioSource musicSource;
     public SceneManager sceneManager;
     public TextMeshProUGUI score;
@@ -144,22 +146,35 @@ public class Player : MonoBehaviour
         if(rounds > 5)
         {
             timeReset = 2f;
-            musicSource.pitch += .2f;
+            musicSource.pitch = 1.1f;
+            fasterText1.SetActive(true);
+            Invoke("SetText1Off", 2f);
         }
 
-        if(rounds > 10)
+        if (rounds > 10)
         {
             timeReset = 1;
-            musicSource.pitch += .2f;
+            musicSource.pitch = 1.3f;
+            fasterText2.SetActive(true);
+            Invoke("SetText2Off", 2f);
         }
 
         if(rounds > 15)
         {
             gameManager.Win(numeraccioGiocatore);
-            musicSource.pitch += .2f;
+            musicSource.pitch = .9f;
         }
 
         gooooooooooo = true;
+    }
+
+    private void SetText1Off()
+    {
+        fasterText1.SetActive(false);
+    }
+    private void SetText2Off()
+    {
+        fasterText2.SetActive(false);
     }
 
     void CambiaSfondino()
