@@ -62,6 +62,22 @@ public class Player : MonoBehaviour
         SetCurrentListina();
     }
 
+    IEnumerator startTimer()
+    {
+        float timer = 3;
+
+        while (true)
+        {
+            timer -= 1;
+            if(timer <= 0)
+            {
+                SetCurrentListina();
+                break;
+            }
+            yield return new WaitForSeconds(1);
+        }
+    }
+
     private void Start()
     {       
         UIManager = GetComponent<UIManager>();
@@ -97,11 +113,12 @@ public class Player : MonoBehaviour
         listoneBruttone.Add(playerInputs4R3);
         listoneBruttone.Add(playerInputs5R3);
 
-        SetCurrentListina();
+        StartCoroutine(startTimer());
     }
 
     void SetCurrentListina()
     {
+        StopCoroutine(startTimer());
         listinaBruttina = listoneBruttone[indexListoneBruttone];
         indexListinaBruttina = 0;
         GetComponent<AssignImages>().RefreshButtonList(listinaBruttina);
